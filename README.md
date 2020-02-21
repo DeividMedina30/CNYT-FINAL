@@ -1,9 +1,23 @@
 # CNYT-FINAL
-El proyecto CNYT(Ciencias Naturales y Tecnolía)  es un repositorio donde ire subiendo diferentes archivos con ejemplos de algoritmos en el lenguaje de programación  Python enfocados a la computación cuantica.
+El proyecto CNYT(Ciencias Naturales y Tecnolía)  es un repositorio creado por Deivid Medina donde ire subiendo diferentes archivos con ejemplos de algoritmos en el lenguaje de programación  Python enfocados a la computación cuantica.
 
-## En que consiste el archivo subido. 
-Los archivos Librería Complejos y Test que se encuentran en la carpeta de  Proyecto. son con ell fin de ver cómo se puede realizar las operaciones con complejos y hacer un test de que funciona correctamente. El archivo Librería complejos nos permitirá ver como se desarrollan la suma, resta, multiplicación, división, módulo, conjugado, conversión entre representación cartesiana a polar y la fase de un número complejo en forma de tuplas (a,b), siendo a la parte real y b como la parte imaginaria. El segundo archivo Test nos permitirá realizar una prueba de que se esté realizando las operaciones correctamente, colocando el resultado esperado de la operación seleccionada y este realizara las debidas pruebas al momento de ejecutar diciendo si está bien las operaciones que se ejecutaron en la Librería de complejos con el resultado que nosotros esperábamos en caso contrario nos indicara cual de las funciones que definimos no está haciendo las cosasLos archivos Librería Complejos y Test que se encuentran en la carpeta de  Proyecto. son con ell fin de ver cómo se puede realizar las operaciones con complejos y hacer un test de que funciona correctamente. El archivo Librería complejos nos permitirá ver como se desarrollan la suma, resta, multiplicación, división, módulo, conjugado, conversión entre representación cartesiana a polar y la fase de un número complejo en forma de tuplas (a,b), siendo a la parte real y b como la parte imaginaria. El segundo archivo Test nos permitirá realizar una prueba de que se esté realizando las operaciones correctamente, colocando el resultado esperado de la operación seleccionada y este realizara las debidas pruebas al momento de ejecutar diciendo si está bien las operaciones que se ejecutaron en la Librería de complejos con el resultado que nosotros esperábamos en caso contrario nos indicara cual de las funciones que definimos no está haciendo las cosas
-En la actualizac  de libreria2 y test2, se añaden nuevas funciones para poder calcular las siguientes operaciones.
+## Funcionalidades
+La libreria puede soportar las siguientes operaciones entre numeros complejos.
+
+## Versión N°1: Operaciones Basicas con numeros complejos.
+La versión 1 de la librería con el nombre LibreriaComplejos accepta las siguientes operaciones.
+1. Suma.
+2. Producto.
+3. Resta.
+4. División.
+5. Módulo.
+6. Conjugado.
+7. Conversion entre representaciones polar y cartesiano.
+8. Retornar la fase de un número complejo.
+Las siguientes funcionalidades pueden ser probades desde el archivo Test.py
+
+## Versión N°2: Operaciones para vectores y Matrices.
+La versión 2 de la librería con el nombre LibreriaComplejo2 accepta las siguientes operaciones.
 
 1. Adición de vectores complejos.
 2. Inverso (aditivo) de un vector complejo.
@@ -23,6 +37,19 @@ En la actualizac  de libreria2 y test2, se añaden nuevas funciones para poder c
 16 Revisar si una matriz es Hermitiana
 17. Producto tensor de dos matrices/vectores
 
+Las siguientes funcionalidades pueden ser probades desde el archivo Test2.py
+Teniendo en cuenta que había un error a la hora de hacer el producto tensor entre matrices. Se sube una nueva version que es LibreriaComplejo3.py y Test3.py.
+
+## ¿Cómo usar la librería?
+
+### Pasos de descarga y uso de pruebas
+Lo primero que debes realizar es hacer un copia de el repositorio desde (cmd) el cual lo puedes ejecutar buscando desde el buscador de la computadora como cmd.
+Despues escribes el siguiente comando git clone https://github.com/DeividMedina30/CNYT-FINAL.git
+
+Cuando ya tengas la carpeta como los archivos clonados podras ejecutar la libreria desde los test que son el archivo con nombre Test1.py, Test2.py y Test3.py .
+
+## Desarrollado con
+- Python - Lenguaje de Programación
 
 ## Autores 
 
