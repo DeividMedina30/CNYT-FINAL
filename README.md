@@ -34,5 +34,6 @@ En la actualizac  de libreria2 y test2, se añaden nuevas funciones para poder c
 * Mi profesor de CNYT  Luis Benavidez
 * Compañeros que me guiaron a la hora de subir el proyecto.
 * A la personas que estan leyendo este documento.
+* Al repositori de Vladimir Correa Arroyave https://github.com/vlacor99/numeros_complejos por ayudarme a enterder el producto tensor
 
 por [Deivid](https://gist.github.com/DeividMedina30)
