@@ -127,6 +127,10 @@ Lo cual nos quiere decir que tenemos un 50% de probabilidad de que el rayo láse
 
 ![image](https://user-images.githubusercontent.com/59977494/76165459-3e972b00-6125-11ea-8587-03e0fa9bf9e4.png)
 
+### Video de simulación del experimento.
+
+[![https://youtu.be/omFa72tRSPc](http://img.youtube.com/vi/omFa72tRSPc/0.jpg)](http://www.youtube.com/watch?v=omFa72tRSPc "Experimento rendija")
+
 ### Simulación:
 
 Dentro de lo que se esperaba para este experimento se planteó una simulación que representara este fenómeno físico.
