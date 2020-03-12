@@ -304,10 +304,12 @@ def leer_Matrices_Transpuesta(m1,p):
         print("No se puede realizar la operación.")
     else:
         if p == 2:
+            x = len(m1)
             m1 = matriz_Conjugada(m1,2)
-            m1 = hacervector(m1)
+            m1 = hacervector(m1,x)
             m1 = matriz_Conjugada(m1,2)
             m1 = matriz_Transpuesta(m1)
+            print(m1)
             return m1
         else:
             m1 = matriz_Transpuesta(m1)
@@ -468,6 +470,7 @@ def posibilidad_posicion(vector,posicion):
     print(probabilidad)
     return probabilidad
 def amplitud_de_transicion(v1,v2):
+    v1,v2 = v2,v1
     v11 = list(v1)
     v1 = matriz_Conjugada(v1,2)
     norma = productoI_Interno(v1,v11)
@@ -487,9 +490,9 @@ def amplitud_de_transicion(v1,v2):
             producto[0][0][i] = round(producto[0][0][i] / noma_Total,2)
     return producto
 #simulacion()
-p = 0
-#v1 = [(0,1),(1,0)]
-#v2 = [(1,0),(0,-1)]
+p = 2
+#v1 = [(1,0),(0,-1)]
+#v2 = [(0,1),(1,0)]
 v1 = [(2,1),(-1,2),(0,1),(1,0),(3,-1),(2,0),(0,-2),(-2,1),(1,-3),(0,-1)]
 v2 = [(-1,-4),(2,-3),(-7,6),(-1,1),(-5,-3),(5,0),(5,8),(4,-4),(8,-7),(2,-7)]
 #posibilidad_posicion(v1,p)
