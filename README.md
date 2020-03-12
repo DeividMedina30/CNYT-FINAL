@@ -213,7 +213,39 @@ Cuando ya tengas la carpeta como los archivos clonados podras ejecutar la librer
 
 ![image](https://user-images.githubusercontent.com/59977494/76166031-67b9ba80-6129-11ea-9c09-8ef4e051a421.png)
 
+## Versión N°4: Sistema cuántico de partícula en una línea.
+La versión 4 de la librería con el nombre LibreriaComplejo4 accepta las siguientes operaciones para el sistema que consiste en una partícula confinada a un conjunto discreto de posiciones en una línea. 
 
+1. El sistema debe calcular la probabilidad de encontrarlo en una posición en particular.
+2. El sistema si se le da otro vector Ket debe buscar la probabilidad de transitar del primer vector al segundo.
+
+Las siguientes funcionalidades pueden ser probades desde el archivo Test4.py
+Al hacer uso de los Test mostrara un resultado como el sigueinte.
+
+![image](https://user-images.githubusercontent.com/59977494/76547430-2728ac80-645b-11ea-8c20-ad43f900ce82.png)
+
+### Nombre de las funciones
+El nombre de las dos funciones que permiten realizar las correspondientes funcionalidades son las siguientes.
+1. posibilidad_posicion
+2. amplitud_de_transicion
+
+![image](https://user-images.githubusercontent.com/59977494/76547691-9a322300-645b-11ea-902b-2e32b25ccee1.png)
+
+![image](https://user-images.githubusercontent.com/59977494/76547743-b1711080-645b-11ea-812a-72b9d723cea1.png)
+
+Para poder hacer una prueba de las funciones se ejecutara desde el test4, con los siguientes nombres.
+1. test_probabilidad_de_encontrarlo_en_una_posición.
+2. test_Amplitud_de_Transicion.
+
+![image](https://user-images.githubusercontent.com/59977494/76547921-fa28c980-645b-11ea-9345-88c38395b19a.png)
+
+![image](https://user-images.githubusercontent.com/59977494/76547971-0e6cc680-645c-11ea-96c2-852b18825179.png)
+
+Para poder ejecutar test_probabilidad_de_encontrarlo_en_una_posición tenemos que mandarle un vector y la posición correspondiente 
+para poder calcular la probabilidad de que se encuentes ahí.
+
+Pa poder ejecutar test_Amplitud_de_Transicion. tenemos que mandarle dos vectores de mismas dimensiones así podra calcular la
+amplitud de transición de pasar de un estado a otro.
 
 ## ¿Cómo usar la librería?
 
