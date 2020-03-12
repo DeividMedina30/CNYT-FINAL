@@ -105,6 +105,13 @@ Y para verlo en forma de matriz se aprecia de la siguiente manera:
 Esto nos demuestra que hay 100 % de probabilidad que entre por la rendija única y después un 25%  de tocar cualquiera de lo siguientes blancos y cada uno de los receptores es reflexivo consigo mismo.
 
 ### Experimento con 2 rendijas.
+
+![image](https://user-images.githubusercontent.com/59977494/76563865-3b2dd780-6476-11ea-80a0-2b2e30bb5988.png)
+
+
+![image](https://user-images.githubusercontent.com/59977494/76563926-4254e580-6476-11ea-8fc0-c79ef523ea80.png)
+
+
 ![image](https://user-images.githubusercontent.com/59977494/76165400-d34d5900-6124-11ea-9008-e04319d66a95.png)
 
 ![image](https://user-images.githubusercontent.com/59977494/76165405-dc3e2a80-6124-11ea-932b-5865a371aed2.png)
