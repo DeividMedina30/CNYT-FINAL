@@ -1,5 +1,6 @@
 from sys import stdin
 import math
+import numpy as np
 def sumComplejos(a,b):
     return (a[0]+b[0], a[1]+b[1])
 def Restacomplejos(a,b):
@@ -242,12 +243,15 @@ def hacermatriz(m1,n):
         break
     cont = 0
     return(matriz)
-def hacervector(v1):
-    x = len(v1[0][0])
+def hacervector(v1,x):
+    cont = 0
     vector = [[0,0] for i in range(x)]
     for i in range(len(vector)):
-        for j in range(len(vector)):
-            vector[i][j] = v1[i][0][j]
+        if cont <= 2:
+            cont += 1
+            for j in range(len(vector)):
+                if cont <= 2:
+                    vector[j][i] = v1[j][0][i] 
     return vector
 def leer_vectores_Suma(v1,v2):
     if len(v1) == 0 or len(v2) == 0:
@@ -453,13 +457,15 @@ def posibilidad_posicion(vector,posicion):
     posicion_vector = [[None,None]]
     posicion_vector[0][0] = vector[posicion][0]
     posicion_vector[0][1] = vector[posicion][1]
-    posicion_vector = (posicion_vector[0][0]**2+posicion_vector[0][1]**2)**(1/2)
+    posicion_vector = (posicion_vector[0][0]**2+posicion_vector[0][1]**2)
     v2 = list(vector)
     vector = matriz_Conjugada(vector,2)
     norma = productoI_Interno(vector,v2)
     norma = (norma[0]+norma[1]) ** (1/2)
     probabilidad = posicion_vector/norma**2
     probabilidad = round(probabilidad,6)
+    print(posicion)
+    print(probabilidad)
     return probabilidad
 def amplitud_de_transicion(v1,v2):
     v11 = list(v1)
@@ -467,11 +473,12 @@ def amplitud_de_transicion(v1,v2):
     norma = productoI_Interno(v1,v11)
     norma = (norma[0]+norma[1]) ** (1/2)
     v22 = list(v2)
+    x = len(v22)
     v2 = matriz_Conjugada(v2,2)
     norma2 = productoI_Interno(v2,v22)
     norma2 = (norma2[0]+norma2[1]) ** (1/2)
-    v2 = hacervector(v2)
-    v2 = matriz_Conjugada(v2,2)    
+    v2 = hacervector(v2,x)
+    v2 = matriz_Conjugada(v2,2)
     v1 = matriz_Transpuesta(v1)
     producto = matriz_Producto(v1,v2)
     noma_Total = norma * norma2
@@ -479,13 +486,13 @@ def amplitud_de_transicion(v1,v2):
         for j in range(1):
             producto[0][0][i] = round(producto[0][0][i] / noma_Total,2)
     return producto
-"""
-#posibilidad_posicion(v,p)
 #simulacion()
-"""
-p = 2
-v1 = [(0,1),(1,0)]
-v2 = [(1,0),(0,-1)]
+p = 0
+#v1 = [(0,1),(1,0)]
+#v2 = [(1,0),(0,-1)]
+v1 = [(2,1),(-1,2),(0,1),(1,0),(3,-1),(2,0),(0,-2),(-2,1),(1,-3),(0,-1)]
+v2 = [(-1,-4),(2,-3),(-7,6),(-1,1),(-5,-3),(5,0),(5,8),(4,-4),(8,-7),(2,-7)]
+#posibilidad_posicion(v1,p)
 amplitud_de_transicion(v1,v2)  
 """valor = 2
 c = (2,2)
