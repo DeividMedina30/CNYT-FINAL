@@ -126,8 +126,8 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(posibilidad_posicion(v,p),(0.052632))
     
     def test_Amplitud_de_Transicion(self):
-        v1 = [(0,1),(1,0)]
-        v2 = [(1,0),(0,-1)]
+        v1 = [(1,0),(0,-1)]
+        v2 = [(0,1),(1,0)]
         self.assertEqual(amplitud_de_transicion(v1,v2),([[[0.0, -1.0]]]))  
 if __name__ == '__main__':
     unittest.main()
