@@ -483,20 +483,63 @@ def amplitud_de_transicion(v1,v2):
     v2 = hacervector(v2,x)
     v2 = matriz_Conjugada(v2,2)
     v1 = matriz_Transpuesta(v1)
+    print(v2)
     producto = matriz_Producto(v1,v2)
     noma_Total = norma * norma2
     for i in range(len(producto[0][0])):
         for j in range(1):
             producto[0][0][i] = round(producto[0][0][i] / noma_Total,2)
     return producto
+def resta(m1,m2):
+    restaMatriz = [[[0,0] for j in range(len(m1))]for i in range(len(m1))]
+    for i in range(len(m1)):
+        for j in range(len(m1)):
+            for k in range(len(m1)):
+                restaMatriz[i][j][k] = m1[i][j][k] - m2[i][j][k]
+    return restaMatriz
+def varianza(matriz,vector):
+    x = matriz_Hermitiana(matriz,matriz)
+    if x:
+        vector2 = vector
+        vector4 = matriz_Conjugada(vector2,2)
+        vector4 = matriz_Transpuesta(vector4)
+        matrizclon = matriz
+        matriz2 = [[[0,0] for j in range(len(matriz))]for i in range(len(matriz))]
+        vecot = []
+        y = len(vector)
+        valor_esperado = matriz_sobre_Vector(matriz,vector)
+        valor_esperado = hacervector(valor_esperado,y)
+        valor_esperado = matriz_Conjugada(valor_esperado,2)
+        vector = matriz_Conjugada(vector,2)
+        vector = hacervector(vector,y)
+        vector = matriz_Conjugada(vector,2)
+        valor_esperado = matriz_Transpuesta(valor_esperado)
+        producto = matriz_Producto(valor_esperado,vector)
+        for i in range(len(matriz2)):
+            for j in range(len(matriz2)):
+                for k in range(len(matriz2)):
+                    if i == j and k == 0:
+                        matriz2[i][j][k] = producto[0][0][0]
+                    else:
+                        matriz2[i][j][k] = 0
+        restamatriz = resta(matrizclon,matriz2)
+        producto2 = matriz_Producto(restamatriz,restamatriz)
+        vector3 = matriz_sobre_Vector(producto2,vector2)
+        producto4 = matriz_Producto(vector4,vector3)
+        return producto4
+    else:
+        return False
+v1 = [(0,1),(1,0)]
+m1 = [[(1,0),(1,-1)],[(1,1),(1,0)]]
+#varianza(m1,v1)
 #simulacion()
-p = 2
+#p = 2
 #v1 = [(1,0),(0,-1)]
 #v2 = [(0,1),(1,0)]
-v1 = [(2,1),(-1,2),(0,1),(1,0),(3,-1),(2,0),(0,-2),(-2,1),(1,-3),(0,-1)]
-v2 = [(-1,-4),(2,-3),(-7,6),(-1,1),(-5,-3),(5,0),(5,8),(4,-4),(8,-7),(2,-7)]
+#v1 = [(2,1),(-1,2),(0,1),(1,0),(3,-1),(2,0),(0,-2),(-2,1),(1,-3),(0,-1)]
+#v2 = [(-1,-4),(2,-3),(-7,6),(-1,1),(-5,-3),(5,0),(5,8),(4,-4),(8,-7),(2,-7)]
 #posibilidad_posicion(v1,p)
-amplitud_de_transicion(v1,v2)  
+#amplitud_de_transicion(v1,v2)  
 """valor = 2
 c = (2,2)
 m1 = [[(0,0),(1,0)],[(1,0),(0,0)]]
@@ -523,7 +566,7 @@ m1 = [[(1,0),(2,0)],[(3,0),(4,0)]]"""
 #leer_vectores_por_escalar(v1,c)
 #leer_vectores_Inversa(v1)
 #leer_vectores_Suma(v1,v2)
-a = (1,2)
+#a = (1,2)
 #b = (2,3)
 #prettyprintings(sumComplejos(a,b))
 #prettyprintings(Restacomplejos(a,b))
