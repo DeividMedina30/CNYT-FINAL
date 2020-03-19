@@ -254,6 +254,35 @@ para poder calcular la probabilidad de que se encuentes ahí.
 Pa poder ejecutar test_Amplitud_de_Transicion. tenemos que mandarle dos vectores de mismas dimensiones así podra calcular la
 amplitud de transición de pasar de un estado a otro.
 
+## Versión N°5: Teoría Cuántica básica.
+La versión 4 de la librería con el nombre LibreriaComplejo4 accepta las siguientes operaciones para el sistema que consiste en una partícula confinada a un conjunto discreto de posiciones en una línea. 
+
+1. El sistema debe calcular la probabilidad de encontrarlo en una posición en particular.
+2. Ahora con una matriz que describa un observable y un vector ket, el sistema revisa que la matriz sea hermitiana, y si lo es, calcula la media y la varianza del observable en el estado dado..
+
+Las siguientes funcionalidades pueden ser probades desde el archivo Test5.py
+Al hacer uso de los Test mostrara un resultado como el sigueinte.
+
+![image](https://user-images.githubusercontent.com/59977494/76547430-2728ac80-645b-11ea-8c20-ad43f900ce82.png)
+
+### Nombre de las funciones
+El nombre de las dos funciones que permiten realizar las correspondientes funcionalidades son las siguientes.
+1. posibilidad_posicion
+2. varianza
+
+![image](https://user-images.githubusercontent.com/59977494/76547691-9a322300-645b-11ea-902b-2e32b25ccee1.png)
+
+Para poder hacer una prueba de las funciones se ejecutara desde el test4, con los siguientes nombres.
+1. test_probabilidad_de_encontrarlo_en_una_posición.
+2. test_varianza.
+
+![image](https://user-images.githubusercontent.com/59977494/76547921-fa28c980-645b-11ea-9345-88c38395b19a.png)
+
+Para poder ejecutar test_probabilidad_de_encontrarlo_en_una_posición tenemos que mandarle un vector y la posición correspondiente 
+para poder calcular la probabilidad de que se encuentes ahí.
+
+Pa poder ejecutar test_varianza. tenemos que mandarle una matriz y un vector.
+
 ## ¿Cómo usar la librería?
 
 ### Pasos de descarga y uso de pruebas
