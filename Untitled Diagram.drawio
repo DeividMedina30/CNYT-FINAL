@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-27T23:47:27.417Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="vCSaElgChYXU4Xjyi9yo" version="16.4.11" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-27T23:47:41.990Z" agent="5.0 (Windows)" etag="n7us4V0yP7oRbrTsyNNY" version="15.8.6" type="github">
   <diagram id="KJ0OMVQqvkp7y9awNzan" name="Page-1">
-    <mxGraphModel dx="1662" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -21,6 +21,9 @@
         </mxCell>
         <mxCell id="ZV6S64bWPlCg-hae5csx-6" value="MARKETING" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF6666;" parent="1" vertex="1">
           <mxGeometry x="490" y="440" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TraVC36YvjnlG2SvX83B-1" value="FINANZAS Y CONTABILIDAD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="320" y="540" width="130" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
